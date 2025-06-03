@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mente Clara - Plataforma de Saúde Mental</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #F9F6F0 0%, #ECE8DF 100%);
+      color: #6C584C;
+    }
+
+    header {
+      background: linear-gradient(to right, #9DC183, #7A9E73);
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      color: #FFFFFF;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      margin-top: 1rem;
+      color: #FFFFFF;
+    }
+
+    header span {
+      margin: 0.25rem;
+    }
+
+    header span a {
+      text-decoration: none;
+      color: #F0F0F0;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      background-color: #4E944F;
+      transition: all 0.3s ease-in-out;
+      display: inline-block;
+    }
+
+    header span a:hover {
+      background-color: #3c773d;
+      transform: translateY(-2px);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      display: block;
+      margin: 1rem auto;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      color: #4E944F;
+      text-align: left;
+      margin-bottom: 1rem;
+    }
+
+
+    .caracteristica, .beneficios, .Feedback, .cta {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .caracteristica article, .beneficios > article, .Feedback > article {
+      background-color: #FFFFFF;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .caracteristica article:hover, .beneficios > article:hover {
+      transform: scale(1.02);
+    }
+
+    .cta article {
+      text-align: center;
+      background-color: #E6EFE5;
+      padding: 2rem;
+      border-radius: 12px;
+    }
+
+    .cta img {
+      max-width: 300px;
+      margin-bottom: 1rem;
+    }
+
+    .cta p {
+      font-size: 1.2rem;
+    }
+    .cta h2{
+        text-align: center;
+    }
+
+    .cta a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.8rem 2rem;
+      background-color: #4E944F;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta a:hover {
+      background-color: #3c773d;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #6C584C;
+      color: #FFFFFF;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 2rem;
+    }
+
+    footer a {
+      color: #FFFFFF;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      header span {
+        display: block;
+        margin: 0.5rem 0;
+      }
+
+      header span a {
+        display: inline-block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mente Clara</h1>
+    <p>Sua mente em equilíbrio, sempre ao seu lado.</p>
+    <span><a href="#descricao">Sobre nós</a></span>
+    <span><a href="#Funcionamento">Como Funcionamos</a></span>
+    <span><a href="#Beneficio">Benefícios</a></span>
+    <span><a href="#Alvo">Público-Alvo</a></span>
+    <span><a href="#Usuarios">Feedbacks</a></span>
+    <span><a href="#Inicio">Cadastre-se</a></span>
+  </header>
+
+  <section>
+    <h2 id="descricao">Sobre nós</h2>
+    <p>Mente Clara é uma plataforma digital de saúde mental que combina inteligência artificial e cuidado humano para oferecer suporte emocional, sessões de psicoterapia, trilhas terapêuticas personalizadas e ferramentas de bem-estar. Com versões mobile e web, o sistema é intuitivo, seguro e pensado para promover o autoconhecimento e o equilíbrio emocional.</p>
+    <img  width="500px" src="Mente_Clara_3.png" alt="Mente Clara" />
+  </section>
+  
+
+  <section>
+    <h2 id="Funcionamento">Como Funciona</h2>
+    <ul>
+      <li> Registre emoções em seu diário digital</li>
+      <li> Receba trilhas personalizadas com IA</li>
+      <li> Agende sessões com psicólogos</li>
+      <li> Acompanhe seu progresso</li>
+    </ul>
+  </section>
+
+  <section class="caracteristica">
+    <article>
+      <h3>Terapia com Psicólogos</h3>
+      <p>Agendamentos fáceis e personalizados com profissionais credenciados.</p>
+    </article>
+    <article>
+      <h3>Trilhas de Meditação</h3>
+      <p>Áudios guiados para relaxamento, foco e autoconhecimento.</p>
+    </article>
+    <article>
+      <h3>Diário Emocional</h3>
+      <p>Registre seus sentimentos e visualize gráficos para insights mensais.</p>
+    </article>
+    <article>
+      <h3>Alertas de Crise</h3>
+      <p>Sugestões de apoio e recursos imediatos em momentos difíceis.</p>
+    </article>
+    <article>
+      <h3>Comunidade Segura</h3>
+      <p>Espaço moderado para compartilhar experiências com apoio coletivo.</p>
+    </article>
+    <article>
+      <h3>Privacidade Garantida</h3>
+      <p>Segurança de ponta com criptografia total dos seus dados.</p>
+    </article>
+  </section>
+
+  <section>
+    <h2 id="Beneficio">Benefícios</h2>
+    <article class="beneficios">
+      <article><p><strong> Acesso 24h</strong> com funcionalidades automatizadas por IA.</p></article>
+      <article><p><strong> Escalabilidade</strong> para milhões de usuários simultâneos.</p></article>
+      <article><p><strong> Personalização profunda</strong> de acordo com o histórico emocional.</p></article>
+      <article><p><strong> Baixo custo</strong>: versão gratuita e planos premium acessíveis.</p></article>
+    </article>
+  </section>
+
+  <section>
+    <h2 id="Alvo">Para Quem É?</h2>
+    <ul>
+      <li>Jovens adultos e universitários</li>
+      <li>Pessoas com ansiedade, estresse ou depressão leve</li>
+      <li>Profissionais com pouca disponibilidade para atendimento presencial</li>
+      <li>Populações em áreas remotas com acesso à internet</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 id="Usuarios">O que dizem nossos usuários</h2>
+    <article class="Feedback">
+      <article><p>“A Mente Clara me ajuda todos os dias. As trilhas guiadas são maravilhosas!”</p></article>
+      <article><p>“Encontrei apoio nos momentos que mais precisava. Me sinto acolhida.”</p></article>
+    </article>
+  </section>
+
+  <section class="cta">
+    <article>
+      <h2 id="Inicio">Comece agora gratuitamente</h2>
+      <img src="Mente_Clara_2.png" alt="Mente Clara">
+      <p>Descubra como a Mente Clara pode transformar sua saúde mental.</p>      
+    </article>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mente Clara. Todos os direitos reservados.</p>
+    <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
+  </footer>
+</body>
+</html>
